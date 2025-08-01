@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Elise Thompson's Portfolio</title>
+  <!--stylesheets-->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-LN+7fdVzj6u52u30Kp6M/trliBMCMKTyK833zpbD+pXdCLuTusPj697FH4R/5mcr" crossorigin="anonymous">
+  <link href="style.css" rel="stylesheet" type="text/css"/>
+  <!--Bevan and PT Sans Caption fonts-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Bevan:ital@0;1&family=PT+Sans+Caption:wght@400;700&display=swap" rel="stylesheet">
+</head>
+
+<body>
+  <!--nav bar-->
+  <nav class="navbar navbar-expand justify-content-right">
+    <div class="container-fluid">
+      <img src="https://i.imgur.com/yvDY9tO.png" style="width:50px" class="navbar-brand">
+      <h1>Elise Thompson</h1>
+      <!--links-->
+      <ul class="navbar-nav">
+        <li class="nav-item">
+          <a class="nav-link" href="home.html">home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">about</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">portfolio</a>
+        </li>
+      </ul>
+    </div>
+  </nav>
+  <br>
+
+  <!--image slideshow-->
+  <div id="slideshow" class="carousel slide bg-dark">
+    <!--slideshow-->
+    <br>
+    <div class="carousel-inner">
+      <div class="carousel-item-active" id="box1"></div>
+      <div class="carousel-item" id="box2"></div>
+      <div class="carousel-item"  id="box3"></div>
+    </div>
+    <!--left/right arrows-->
+    <button class="carousel-control-prev" type="button" data-bs-target="slideshow" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" style="color:black"></span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="slideshow" data-bs-slide="next">
+      <span class="carousel-control-next-icon" style="color:black"></span>
+    </button>
+    <!--dots-->
+    <br>
+    <br>
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#slideshow" data-bs-slide-to="0" class="active"></button>
+      <button type="button" data-bs-target="#slideshow" data-bs-slide-to="1"></button>
+      <button type="button" data-bs-target="#slideshow" data-bs-slide-to="2"></button>
+    </div>
+  </div>
+
+  <!--What's new section-->
+  <br>
+  <div class="row container-fluid bg-dark">
+    <br>
+    <h2 id="wn">What's new?</h2>
+    <div class="img-placeholder col"></div>
+    <div class="col">
+      <p id="wn">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nam cursus justo ante, pretium laoreet risus viverra et. Aenean eget placerat eros. Pellentesque in ipsum et quam lobortis iaculis vel et turpis.</p>
+      <br>
+      <p id="wn">Vivamus libero purus, dictum sit amet purus ut, scelerisque consequat tellus. Vivamus sed iaculis magna, in interdum nunc. Maecenas blandit urna eu lectus tincidunt pharetra. Phasellus tempor ultricies nunc, eu porta enim interdum et. </p>
+    </div>
+  </div>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.7/dist/js/bootstrap.bundle.min.js" integrity="sha384-ndDqU0Gzau9qJ1lfW4pNLlhNTkCfHzAVBReH9diLvGRem5+R9g2FzA8ZGN954O5Q" crossorigin="anonymous"></script>
+  <script src="script.js"></script>
+
+</body>
+
+</html>

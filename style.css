@@ -1,4 +1,61 @@
-html {
-  height: 100%;
-  width: 100%;
+body {
+  font-family: "PT Sans Caption", sans-serif;
+}
+
+h1, h2 {
+  font-family: "Bevan", serif;
+}
+
+h2 {
+  padding: 10px;
+}
+
+#wn {
+  color: white;
+}
+
+nav {
+  background-color: #D9D9D9;
+}
+
+#box1, #box2, #box3 {
+  border: 2px solid black;
+  border-radius: 15px;
+  width: 60%;
+  height: 200px;
+  margin: auto;
+  background-color: white;
+}
+
+button {
+  border: 2px solid black;
+  background-color: black;
+}
+
+.img-placeholder {
+  width: 40%;
+  height: 375px;
+  background-color: white;
+  border-radius: 15px;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+#profile-img {
+  width: 200px;
+  height: 300px;
+  background-color: white;
+  border-radius: 15px;
+  border: 2px solid black;
+  margin-left: 10px;
+  margin-bottom: 10px;
+}
+
+button {
+  fill: black;
+}
+
+#line {
+  width=100%;
+  border-style: none none dotted none;
 }
