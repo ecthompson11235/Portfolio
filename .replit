@@ -25,6 +25,10 @@ Console logs are available in the Preview devtools or your browser devtools.\" &
 """
 waitForPort = 80
 
+[[workflows.workflow.tasks]]
+task = "workflow.run"
+args = "Serve static"
+
 [[ports]]
 localPort = 80
 externalPort = 80
