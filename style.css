@@ -7,9 +7,13 @@
   --pink: #FADCC8;
 }
 
-/*page transition*/
+/*page transition and scrollbar*/
 @view-transition {
   navigation: auto;
+}
+
+body::-webkit-scrollbar {
+  display: none;
 }
 
 /*nav bar styles*/
