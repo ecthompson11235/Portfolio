@@ -186,6 +186,7 @@ a {
 
 #name {
   animation: color-shift 7s infinite alternate steps(100, end);
+  font-size: 10vw;
 }
 
 @keyframes color-shift {
