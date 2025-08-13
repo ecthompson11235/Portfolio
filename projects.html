@@ -19,7 +19,7 @@
   <!--nav bar-->
   <nav class="navbar navbar-expand justify-content-left sticky-top">
     <div class="container-fluid">
-      <img src="logo.svg" class="navbar-brand" style="width:75px">
+      <img src="logo.svg"class="navbar-brand" style="width:75px">
       <!--links-->
       <ul class="navbar-nav">
         <li class="nav-item">
@@ -29,13 +29,13 @@
           <a class="nav-link" href="projects">projects</a>
         </li>
       </ul>
-      <!--pause/play button-->
+      <!--dark mode/light mode button-->
       <div class="btn-group">
-        <button type="button" class="btn btn-outline" onclick="pause()" id="pause-button">
-          <i class="bi bi-pause-fill"></i>
+        <button type="button" class="btn btn-outline">
+          <i class="bi bi-sun" id="sun"></i>
         </button>
-        <button type="button" class="btn btn-outline" onclick="play()" id="play-button">
-          <i class="bi bi-play-fill" id="play-icon"></i>
+        <button type="button" class="btn btn-outline">
+          <i class="bi bi-moon"></i>
         </button>
       </div>
     </div>
@@ -67,87 +67,34 @@
       <h2 id="flower7">*</h2>
     </div>
   </div>
- 
+
   <div class="body">
     <!--introduction-->
     <div>
-      <h1 id="name">Elise Thompson</h1>
-      <h4>high school student & aspiring agricultural engineer</h4>
+      <h1>Projects</h1>
     </div>
     <br>
 
-    <!--goals, skills, and interests-->
+    <!--project cards-->
     <div class="flex-container">
-      <!--goals-->
-      <div class="click-and-reveal">
-        <button onclick="revealG()" class="gsi">
-          <h2>GOALS</h2>
-        </button>
-        <div id="dropdownG" class="dropdown-content">
-          <ul class="list">
-            <li>graduate college without debt</li>
-            <li>help to advance urban agriculture in Baltimore</li>
-            <li>live for God</li>
-          </ul>
+      <div class="proj-card">
+        <a href="showpiece.html">
+          <h2>Portfolio Website</h2>
+          <p>The one you're looking at right now! :)</p>
+          <img src="portfolio-screenshot.png" id="screenshot">
+        </a>
+      </div>
+      <div class="proj-card">
+        <h2>Logo Design</h2>
+        <p>Check out the logos I've created and learn about my design processes.</p>
+        <div class="container-row">
+          <img src="libraryLogoNoText.png" id="lib-logo-nt">
+          <img src="bakeryLogoNoText.svg" id="bak-logo-nt">
         </div>
       </div>
-      
-      <!--interests-->
-      <div class="click-and-reveal">
-        <button onclick="revealI()" class="gsi">
-          <h2>INTERESTS</h2>
-        </button>
-        <div id="dropdownI" class="dropdown-content">
-          <ul class="list">
-            <li>agriculture</li>
-            <li>math</li>
-            <li>physics</li>
-            <li>Internet of Things</li>
-            <li>literature</li>
-            <li>etymology</li>
-            <li>...and much more!</li>
-          </ul>
-        </div>
-      </div>
-      
-      <!--skills-->
-      <div class="click-and-reveal">
-        <button onclick="revealS()" class="gsi">
-          <h2>SKILLS</h2>
-        </button>
-        <div id="dropdownS" class="dropdown-content">
-          <div class="container-col">
-            <div class="skill">
-              <img src="https://www.w3.org/html/logo/downloads/HTML5_Badge_512.png" class="skill-img">
-              <h3>HTML</h3>
-            </div>
-            <div class="skill">
-              <i class="bi bi-css"></i>
-              <h3>CSS</h3>
-            </div>
-            <div class="skill">
-              <i class="bi bi-javascript"></i>
-              <h3>JavaScript</h3>
-            </div>
-            <div class="skill">
-              <img src="FigmaLogo.png" class="skill-img">
-              <h3>Figma</h3>
-            </div>
-            <div class="skill">
-              <img src="adobeIllustrator.svg" class="skill-img">
-              <h3>Adobe Illustrator</h3>
-            </div>
-            <div class="skill">
-              <img src="adobePhotoshop.svg" class="skill-img">
-              <h3>Adobe Photoshop</h3>
-            </div>
-          </div>
-        </div>
-      </div>
-      
-    </div> <!--end of gsi div-->
-    
-  </div> <!--end of body div-->
+    </div>
+
+</div> <!--end of body div-->
 
   <!--footer-->
   <footer>
