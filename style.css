@@ -23,8 +23,8 @@
 }
 
 nav {
-  background-color: var(--black);
-  border-bottom: 5px solid var(--black);
+  background-color: var(--purple);
+  padding: 5px;
   li {
     font-size: 25px;
     padding-left: 10px;
@@ -181,7 +181,19 @@ a {
   border-radius: 50px;
   border: 3px solid var(--black);
   width: 80%;
-  background-color:rgba(255,255,255, 0.5);
+  background-color:rgba(255,255,255, 0.25);
+}
+
+#name {
+  animation: color-shift 7s infinite alternate steps(100, end);
+}
+
+@keyframes color-shift {
+  0% {color: var(--black);}
+  25% {color: var(--purple);}
+  50% {color: var(--ochre);}
+  75% {color: var(--gamboge);}
+  100% {color: var(--pink); text-shadow: 5px 5px var(--black);}
 }
 
 .flex-container {
@@ -314,8 +326,7 @@ ul.list {
 
 /*footer*/
 footer {
-  border-top: 5px solid var(--black);
-  background-color: var(--black);
+  background-color: var(--purple);
   color: white;
   padding: 10px;
   text-align: center;
